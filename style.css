@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#square {
+    height: 20rem;
+    width: 20rem;
+    background-color: blue;
+    border: solid 0.3rem black;
+}
