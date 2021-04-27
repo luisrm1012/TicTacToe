@@ -12,9 +12,14 @@ html {
     flex-direction: row;
 }
 
-#square {
+.square {
     height: 20rem;
     width: 20rem;
-    background-color: blue;
+    background-color: green;
     border: solid 0.3rem black;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: grey;
 }
