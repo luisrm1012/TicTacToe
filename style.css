@@ -13,13 +13,26 @@ html {
 }
 
 .square {
+    display: flex;
     height: 20rem;
     width: 20rem;
     background-color: green;
     border: solid 0.3rem black;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .square:hover {
     background-color: grey;
+}
+
+#x {
+    font-size: 15rem;
+    color: black;
+}
+
+#o {
+    font-size: 15rem;
+    color: black;
 }

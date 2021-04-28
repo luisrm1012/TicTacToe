@@ -14,12 +14,12 @@ for (var i = 0; i < square.length; i++) {
 
 function myFunction(element, i) {
     if (player1 == true) {
-        element.style.backgroundColor = "red";
+        element.innerHTML = "<h1 id='x'>X<h1>"
         player1 = false;
         board[i] = 1;
         console.log(board)
     } else if (player1 == false) {
-        element.style.backgroundColor = "blue";
+        element.innerHTML = "<h1 id='o'>O<h1>"
         player1 = true;
         board[i] = 2;
         console.log(board)
