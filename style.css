@@ -8,8 +8,18 @@ html {
 }
 
 .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #535353;
+}
+
+.board {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .row {
@@ -21,7 +31,7 @@ html {
     display: flex;
     height: 20rem;
     width: 20rem;
-    background-color: green;
+    background-color: whitesmoke;
     border: solid 0.3rem black;
     cursor: pointer;
     align-items: center;
@@ -29,15 +39,21 @@ html {
 }
 
 .square:hover {
-    background-color: grey;
+    background-color: #a9a9aa;
 }
 
 #x {
     font-size: 15rem;
-    color: black;
+    color: #1E90FF;
 }
 
 #o {
     font-size: 15rem;
-    color: black;
+    color: crimson;
 }
+
+#modal {}
+
+#winner {}
+
+#playAgain {}

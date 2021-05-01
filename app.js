@@ -50,7 +50,7 @@ function checkWin(x) {
     } else if (board[6] == x && board[7] == x && board[8] == x) {
         //WIN
         alert("Player " + x + " You Win!!!")
-    } else if (board[3] == x && board[5] == x && board[8] == x) {
+    } else if (board[2] == x && board[5] == x && board[8] == x) {
         //WIN
         alert("Player " + x + " You Win!!!")
     }
