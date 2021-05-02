@@ -70,10 +70,24 @@ function checkWin(x) {
     } else if (board[2] == x && board[4] == x && board[6] == x) {
         //WIN
         showWinner(x)
+    } else if (tie() == true) {
+        document.getElementById("modal").style.display = "flex"
+        document.getElementById("winner").innerHTML = "TIE"
     }
+
 }
 
-function showWinner (x){
+function tie() {
+    let result = true;
+    for (let i = 0; i < board.length; i++) {
+        if (board[i] == null) {
+            result = false;
+        }
+    }
+    return result;
+}
+
+function showWinner(x) {
     document.getElementById("modal").style.display = "flex"
     document.getElementById("winner").innerHTML = "Player " + x + " Wins!!!"
 }
